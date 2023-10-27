@@ -1,0 +1,9 @@
+Unary operators are act upon single operends.
+they are pre increment (++a)
+ and Post increment (a++)
+ and possitive (+a)
+ and negtive (a-)
+
+
+Binary operators are act upon a two operends they are 
+Arthametic operators and relational operators.

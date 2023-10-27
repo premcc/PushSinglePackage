@@ -1,0 +1,56 @@
+How many Ways we can reverse a String
+
+
+1. by using for loop
+
+
+A) public class Reverse_A_String {
+	
+	public static void main(String[] args) {
+		
+		String data ="premchand";
+		
+		String reverse="";
+		System.out.println(data);
+		for(int i=data.length()-1;i>=0;i--)
+		{
+		   reverse=reverse+data.charAt(i);
+		}
+		
+		System.out.println(reverse);
+	}
+
+}
+
+2.By using StringBuffer class
+
+A) public class Reverse_A_String {
+	
+	public static void main(String[] args) {
+		
+		String data ="premchand";
+		System.out.println(data);
+		StringBuffer sb=new StringBuffer(data);
+		StringBuffer reverse=sb.reverse();
+		
+		System.out.println(reverse);
+	}
+
+}
+
+3.By using String_Builder
+
+
+public class Reverse_A_String {
+	
+	public static void main(String[] args) {
+		
+		String data ="premchand";
+		System.out.println(data);
+		StringBuilder sb=new StringBuilder(data);
+		
+		StringBuilder reverse=sb.reverse();
+		System.out.println(reverse);
+	}
+
+}

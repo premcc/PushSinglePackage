@@ -1,0 +1,99 @@
+q)what is the difference between the this and super
+
+a)In java, super keyword is used to access methods of the parent class while this is used to access methods of the current class.
+
+this keyword is a reserved keyword in java i.e, we can’t use it as an identifier. It is used to refer current class’s instance as well as static members. It can be used in various contexts as given below:
+
+to refer instance variable of current class
+to invoke or initiate current class constructor
+can be passed as an argument in the method call
+can be passed as argument in the constructor call
+can be used to return the current class instance
+
+
+
+// Program to illustrate this keyword
+// is used to refer current class
+class RR {
+    // instance variable
+    int a = 10;
+ 
+    // static variable
+    static int b = 20;
+ 
+    void GFG()
+    {
+        // referring current class(i.e, class RR)
+        // instance variable(i.e, a)
+        this.a = 100;
+ 
+        System.out.println(a);
+ 
+        // referring current class(i.e, class RR)
+        // static variable(i.e, b)
+        this.b = 600;
+ 
+        System.out.println(b);
+    }
+ 
+    public static void main(String[] args)
+    {
+        // Uncomment this and see here you get
+        // Compile Time Error since cannot use
+        // 'this' in static context.
+        // this.a = 700;
+        new RR().GFG();
+    }
+}
+ output=100 600
+
+
+super keyword 
+super is a reserved keyword in java i.e, we can’t use it as an identifier.
+super is used to refer super-class’s instance as well as static members.
+super is also used to invoke super-class’s method or constructor.
+super keyword in java programming language refers to the superclass of the class where the super keyword is currently being used.
+The most common use of super keyword is that it eliminates the confusion between the superclasses and subclasses that have methods with same name.
+super can be used in various contexts as given below:
+
+it can be used to refer immediate parent class instance variable
+it can be used to refer immediate parent class method
+it can be used to refer immediate parent class constructor.
+Example
+
+
+// Program to illustrate super keyword
+// refers super-class instance
+ 
+class Parent {
+    // instance variable
+    int a = 10;
+ 
+    // static variable
+    static int b = 20;
+}
+ 
+class Base extends Parent {
+    void rr()
+    {
+        // referring parent class(i.e, class Parent)
+        // instance variable(i.e, a)
+        System.out.println(super.a);
+ 
+        // referring parent class(i.e, class Parent)
+        // static variable(i.e, b)
+        System.out.println(super.b);
+    }
+ 
+    public static void main(String[] args)
+    {
+        // Uncomment this and see here you get
+        // Compile Time Error since cannot use 'super'
+        // in static context.
+        // super.a = 700;
+        new Base().rr();
+    }
+}
+Output
+10
+20

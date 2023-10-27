@@ -1,0 +1,21 @@
+Both Composition and Aggregation are types of association which are used to represent the relationship between two classes. But they are absolutely different from each other. The basic difference between the two is that composition is a strong association, while aggregation is a weak association.
+
+What is Composition?
+Composition is a method of wrapping the simple objects or data types into a single unit. It is a type of association used to represent the relationship between two classes.
+
+Composition is considered as a strong association type. This is because, in composition, the parent owns the child entity, so the child entity cannot exist without its parent entity. Thus, in composition, the child entity does not have its own life cycle. We cannot directly or independently access a child entity. In the UML diagram, composition is denoted by a filled diamond.
+
+Difference between Composition and Aggregation
+  
+
+      Composition                                                                            Aggregation               
+1.Composition is a way to wrap simple objects                                                1.Aggregation differs from ordinary composition in that 
+                                                                                               it does not imply ownership.
+                                                                                 
+or data types into a single unit.
+
+2.In composition, parent entity owns child entity.                                             2.In Aggregation, parent HAS-A relation with child entity.
+
+3.It is denoted by a filled diamond.                                                           3.it is denoted by a empty diamond
+
+4.It is a strong association.                                                                  4.it is a weak assocoation

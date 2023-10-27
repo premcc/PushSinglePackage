@@ -1,0 +1,15 @@
+Q) Can we make constructor as static or final or abstract ?
+
+A) 1. Java constructor can not be final
+
+One of the important property of java constructor is that it can not be final. As we know, constructors are not inherited in java. Therefore, constructors are not subject to hiding or overriding. When there is no chance of constructor overriding, there is no chance of modification also. When there is no chance of modification, then no sense of restricting modification there. We know that the final keyword restricts further modification. So a java constructor can not be final because it inherently it cannot be modified. Also, a java constructor is internally final. So again there is no need for final declaration further. 
+
+  
+2.Java constructor can not be static 
+
+One of the important property of java constructor is that it can not be static. We know static keyword belongs to a class rather than the object of a class. A constructor is called when an object of a class is created, so no use of the static constructor. Another thing is that if we will declare static constructor then we can not access/call the constructor from a subclass. Because we know static is allowed within a class but not by a subclass.
+
+
+3.Java constructor can not be abstract 
+
+One of the important property of java constructor is that it can not be abstract. If we are declaring a constructor as abstract as we have to implement it in a child class, but we know a constructor is called implicitly when the new keyword is used so it can’t lack a body and also it can not be called as a normal method. Also, if we make a constructor abstract then we have to provide the body later. But we know constructor can not be overridden so providing body is impossible. Hence, what we will do with this abstract constructor when we can not provide implementation to it.

@@ -1,0 +1,1 @@
+Pointer provides direct access to memory address. One can access some arbitrary memory location and do read and write operations on it. This results in loss of security. So to make java secure it doesn’t support pointers.

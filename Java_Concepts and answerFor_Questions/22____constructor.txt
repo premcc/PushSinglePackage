@@ -1,0 +1,78 @@
+q. Can we make constructor as private ??
+
+ans:
+Java allows us to declare a constructor as private. We can declare a constructor private by using the private access specifier. Note that if a constructor is declared private, we are not able to create an object of the class. Instead, we can use this private constructor in Singleton Design Pattern.
+
+It does not allow a class to be sub-classed.
+It does not allow to create an object outside the class.
+If a class has a private constructor and when we try to extend the class, a compile-time error occurs.
+We cannot access a private constructor from any other class.
+If all the constant methods are there in our class, we can use a private constructor.
+If all the methods are static then we can use a private constructor.
+We can use a public function to call the private constructor if an object is not initialized.
+We can return only the instance of that object if an object is already initialized.
+
+The main purpose of using a private constructor is to restrict object creation. We also use private constructors to implement the singleton design pattern. The use-cases of the private constructor are as follows:
+
+It can be used with static members-only classes.
+It can be used with static utilityor constant classes.
+It can also be used to create singleton classes.
+It can be used to assign a name, for instance, creation by utilizing factory methods.
+It is also used to avoid sub-classing.
+It incorporates the factory methods.
+
+
+public class A  
+{  
+//craeting a private constructor   
+private A()  
+{  
+}  
+void display()  
+{  
+System.out.println("Private Constructor");  
+}  
+}  
+private class Test  
+{  
+public static void main(String args[])  
+{  
+//compile time error  
+A obj = new A();   
+}  
+}  
+Output:
+
+Private Constructor in Java
+PrivateConstructorDemo.java
+
+public class PrivateConstructorDemo   
+{  
+//creating an instance variable of the class Tester  
+private static PrivateConstructorDemo pcd;  
+//creating a private constructor  
+private PrivateConstructorDemo()  
+{  
+}  
+//creating a static method named getInstance()  
+public static PrivateConstructorDemo getInstance()  
+{  
+if(pcd == null)  
+{  
+//creating a constructor of the class      
+pcd = new PrivateConstructorDemo();  
+}  
+return pcd;  
+}  
+//main() method  
+public static void main(String args[])   
+{  
+PrivateConstructorDemo pcd = PrivateConstructorDemo.getInstance();  
+PrivateConstructorDemo pcd1 = PrivateConstructorDemo.getInstance();  
+//invokes the getInstance() method and prints the corresponding result  
+System.out.println(pcd.equals(pcd1));  
+}    
+}  
+Output:
+
+true

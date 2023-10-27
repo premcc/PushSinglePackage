@@ -1,0 +1,72 @@
+program for this() keyword::
+
+
+public class Difference_Between_This()_And_Super (){
+	
+	
+	
+	public Difference_Between_This_And_Super(int a,int b)
+	{
+		System.out.println("the sum of a and b is "+(a+b));
+		
+	}
+
+        public Difference_Between_This_And_Super(int a,int b,String data)
+	{
+		System.out.println("the sum of a and b is "+(a+b));
+		
+	}
+	
+	   public Difference_Between_This_And_Super()
+	{
+		this(20, 30);///this keyword always refferese the current object>>>>>>and also inside this keyword calls the another constructors based on arguments
+	}
+	   
+	   public static void main(String[] args) {
+		
+		  Difference_Between_This_And_Super cp =new  Difference_Between_This_And_Super();// this will call the constructor having no arguments
+				  
+		   
+	}
+
+
+
+program for super() keyword::
+
+package Constructor_Concept;
+
+public class Calling_One_Class_Constructor_From_Another extends Difference_Between_This_And_Super {
+	
+	
+	
+	public Calling_One_Class_Constructor_From_Another(int a,int b,String day) {
+		
+		
+		super(90,98,"baby");
+	}
+	
+	public Calling_One_Class_Constructor_From_Another() {
+		super();//super keyword always referse to this parent class constructor with the respective arguments.
+	}
+
+	public static void main(String[] args) {
+		
+		
+		
+		Calling_One_Class_Constructor_From_Another po=new Calling_One_Class_Constructor_From_Another();//output: the sum of a and b is 50
+		
+		Calling_One_Class_Constructor_From_Another po1=new Calling_One_Class_Constructor_From_Another(50,60,"prem");//the sum of a and b is 188  baby
+		
+	}
+	
+	
+
+}
+
+
+Theory:
+
+      this ()                                                                    super()
+
+1.this keyword always refferese the current class constructor                             1.super keyword always referse to this parent class constructor
+

@@ -1,0 +1,286 @@
+1. what do you mean by JDK and JRE and JVM ?
+
+2. Can we wright the STATIC PUBLIC VOID MAIN instead of PUBLIC STATIC VOID MAIN ?
+
+3. Can we make constructor as static or final or abstract ? Why?
+
+4. Which class is supermost class of all classes in java ? What are the avialable methods in that class ?
+
+5. What is the difference betweenn aggregation and composition ?
+
+6. Why java does not supported pointers ? and what is pointers ?
+
+7. what logic you use for swapping the two numbers?
+
+8.What is the unary and binary operators?
+
+9.Explain the hirarchy of exception in java ?
+
+10. What is getter and setter method in java ?
+
+11. What is the difference between this() and super() keyword in java ?
+
+12. What is pojo in java ?
+
+13. What is difference between array and arrayList?
+
+14. What is difference between arraylist and LinkedList?
+
+15. What is difference between List and set ?
+
+16. What is difference between String and Stringbuffer ?
+
+17. What is difference between StringBuffer and stringbuilder ?
+
+18. What is difference between String and stringbuilder?
+
+19. What is difference between throw and throws in java ?
+ 
+20. What is difference between final and finally and finalize in java ?
+
+21. What is difference between colloction and collections ?
+
+22. Can we make constructor as private?
+
+A)Yes, we can declare a constructor as private. 
+If we declare a constructor as private we are not able to create an object of a class.?
+
+23. How many ways to reverse a string?
+
+24.what are the different types of packages ?
+
+25.which package which imported dafault in java? ANs=java.lang
+
+26. How many methods are you aware on arrays and StringBuffer and String Builder and ArrayList and LinkedList and HashStack and Linked Hashstack and Hashmap and LinkedHashMap?
+
+27. Difference Between this called statement  and super called statement in Java?
+
+28. Explain the collection hirarchy ?
+
+28.Which interface is the top most interface in collection ? which interface is not inherited from collection interface ?
+
+29.What is iterator class in java and tell me its methods ?
+
+30.What is array ? why we need array?
+
+31.What is string why we need string ?
+
+32.What are different types of exception you know in java ?
+
+33.Why strings are immutable in java ?
+
+34.What is stack over flow error ?
+
+35.is garbage collector is for the heap memory or stack memory ? A) heap memory
+
+36.in java Which class that we cant create an object for that class ? and also which class contains a defalut constructor as private ?
+
+37.Can we achive call by rerference in  java ?
+
+38.Can we use the throw keyword in the catch block ?
+
+39.
+ ?
+
+A)Yes, It is possible to have a try block without a catch block by using a final block.
+
+public class TryBlockWithoutCatch {
+   public static void main(String[] args) {
+      try {
+         System.out.println("Try Block");
+      } finally {
+         System.out.println("Finally Block");
+      }
+   }
+}
+
+40.what is operators what are the different types of operators? 
+
+41.if there are theree class A and B and C  how will access all the methods of A and B from c ?
+
+42.There are two methods with the same name different type of parameters but both methods are declaring different specifiers ex:
+>>>>1St==
+
+public void m1(String name)
+{
+
+}
+private void m1(int age)
+{
+
+}
+
+is it the example of overloading?
+===>ANS: yes it is example of overloading for achiving overloading we declare same method with the different types of parameters
+no need of return types and access modifiers should be same 
+
+43.What is class and object in java?
+
+44.What is variable ?what are the different types of variables?
+
+45.what is datatype ?What are the different types of datatypes ?
+
+46.What is literals in java? what are the types of literals ?
+
+47.what is implicit convertion and explicit conversion in java?
+
+48.What are the default values of primitive datatypes?
+
+49.What are the control statements in java?
+
+50.What is Scanner class ?what are the different methods in scanner class ?
+
+51.what is the difference between next() and nextLine()?
+A)
+next() takes the input from the user with no space.
+
+nextLine(0) takes the input from the user with space .
+
+52.What is oop and tell me the concepts in oops?
+
+53.What is a method in java?what are different types of methods ?
+
+54.What is constructor ?What are the different types of constructors?
+
+55.What are the access modifiers?can you tell me briefly about it ?
+
+56.What is encapsulation?tell me the example of fully encapsulated class in java and advantages >>Java bean is fully encapusulated class
+
+57.What is an abstraction in java?
+
+A)Abstraction in Java refers to hiding the implementation details of a code and exposing only the necessary information to the user.
+
+58.What are the difference between Abstract and interface in java?
+
+A)Abstract class can have abstract and non-abstract methods.             Interface can have only abstract methods. 
+                                                                         Since Java 8, it can have default and static methods  also                                                                                                       
+
+Abstact class cant support multiple inheritence                           interface support multiple inheritence
+
+We use abstract keyword for declaration                                  we use interface key word for declaration
+
+ 
+
+59.Can we make abstract class or method private?
+
+A)If a method of a class is private, you cannot access it outside the current class, 
+not even from the child classes of it. But, incase of an abstract method,
+ you cannot use it from the same class, you need to override it from subclass and use. 
+
+
+60.What is an interface ?
+
+61.What is an array?How many ways to declare an array ?
+
+62.What is an exception in java ?How can you handle the exceptions ? What its types ? Which is the supermost exception in java ?
+
+63.Why java is not 100% object oriented?
+
+A)the 8 primitive datatypes in java is not objects thats why we can not call java is 100% object oriented
+
+64.why java is a platform independent?
+
+A) The compilation code of java can run any operating system thats why we call java is platform independent.
+
+65.Can we inherited the final classes?
+
+66.Can we inherited the abstract classes?
+
+67.Can we extend the interface from a class?
+
+68.Can we extendd the interface from another interface?
+
+69.What are the difference between array and collections?
+
+70.What is String ? avilable methods of string ?
+
+71.What is Map?
+
+72.What are the difference between HashMap and LInkedHashmap?
+
+73.What are the difference between List and map?
+
+74.What is wrapper classes?
+
+75.Explain about jvm architechture ?
+
+76.Why we need interfaces when we have abstract class?
+
+A)In a simple way abstract classes can not support multiple inheritence but interfaces supports.
+
+77.What is class not found exception ?
+
+A)ClassNotFoundException in Java is a checked exception 
+that occurs when the JVM attempts to load a class but can not locate the class in the classpath
+
+78.What is IO exception in java ?
+
+A) It is a checked exception IOException that is thrown when a file or directory cannot be found.
+
+79.Can we declare a multiple catch blocks of a single try?
+
+80.What are the drawbacks of an arrays?
+
+81.Can we declare a local variable as static?
+
+82.Tell me the predefined classes of java?
+
+83.public class thisKeyword ? Tell me the output of this programs 
+{
+int a;
+String b;
+double d;
+
+void m1(int a,String b,double d)
+{
+System.out.println("I am prem")
+}
+
+public static void main(String args[])
+{
+thisKeyword t=new thisKeyword();
+t.m1(1,"thatha",1.11);
+
+System.out.println(t.a);
+System.out.println(t.b);
+System.out.println(t.d);
+
+}
+
+}
+
+84.what is the difference between the deque and priorityque?
+
+85.What is the diffence between the HashMap and LinkedHashMap?
+
+86.Do you know about regular experessionss?
+
+87.Can we create a static abstract methods of as interface?
+
+88.Can we make interface as final ?
+
+89.What is the difference between the abstract method and final method?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

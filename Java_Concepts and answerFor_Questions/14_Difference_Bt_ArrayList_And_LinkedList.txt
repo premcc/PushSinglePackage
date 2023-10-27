@@ -1,0 +1,8 @@
+
+
+            ArrayList                                                                                             LinkedList
+
+
+1) An ArrayList class can act as a list only because it implements List only.	 LinkedList class can act as a list and queue both because it implements List and Deque interfaces.
+2) ArrayList is better for storing and accessing data.	                         LinkedList is better for manipulating data.
+3) The memory location for the elements of an ArrayList is contiguous.	         The location for the elements of a linked list is not contagious.
